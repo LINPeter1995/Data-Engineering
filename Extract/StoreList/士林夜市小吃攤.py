@@ -85,7 +85,7 @@ for card in cards:
 
 
 # === 儲存成 CSV ===
-output_path = os.path.join("Peter/Data/StoreList/士林夜市小吃攤.csv")
+output_path = os.path.join("Load/StoreList/士林夜市小吃攤.csv")
 with open(output_path, "w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=["name", "url", "address"])
     writer.writeheader()

@@ -27,7 +27,7 @@ def 抓取評論(driver, url):
         more_btn.click()
         time.sleep(2)
     except Exception as e:
-        print(f"❌ 錯誤：{e}")
+        print(f"錯誤：{e}")
         import traceback
         traceback.print_exc()
 
@@ -38,7 +38,7 @@ def 抓取評論(driver, url):
             driver.execute_script("arguments[0].click();", btn)
             time.sleep(1)
         except Exception as e:
-            print(f"❌ 錯誤：{e}")
+            print(f"錯誤：{e}")
             import traceback
             traceback.print_exc()
 
@@ -63,7 +63,7 @@ def 抓取評論(driver, url):
                 "text": text.strip()
             })
         except Exception as e:
-            print(f"❌ 錯誤：{e}")
+            print(f"錯誤：{e}")
             import traceback
             traceback.print_exc()
 

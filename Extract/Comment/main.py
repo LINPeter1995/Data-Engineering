@@ -4,8 +4,8 @@ from 儲存 import 儲存評論
 import os
 
 # 修正路徑
-csv_path = "C:Peter/Data/StoreList/去掉重複後的資料.csv"
-儲存路徑 = "C:Peter/Data/Comment/全部評論.csv"
+csv_path = "Load/StoreList/去掉重複後的資料.csv"
+儲存路徑 = "Load/Comment/全部評論.csv"
 
 # 檢查檔案是否存在
 if not os.path.exists(csv_path):
