@@ -1,20 +1,33 @@
 # Tibame-Project 
 
-歡迎來到Tibame專案！
+Tibame 專案：士林夜市商家評論收集與分析（Data Pipeline 版）
+
+專案簡介
+
+本專案聚焦於資料工程技能實作，透過 Python Selenium 爬取 Google Maps 上士林夜市商家的評論資訊，並整合多種資料平台與工具，建構完整的資料流管線（Data Pipeline），最終以商業智慧工具呈現分析結果。
+
+技術架構與流程
+	1.	資料擷取層（Data Collection）
+	•	使用 Python + Selenium 自動化爬取商家評論
+	•	評論內容儲存為 CSV 檔
+	2.	資料儲存與轉換（ETL）
+	•	將 CSV 匯入：
+	•	MongoDB（做為暫存與結構化資料存取）
+	•	MySQL（結構化儲存，利於關聯查詢）
+	•	使用 Apache Airflow 調度 ETL 任務
+	•	將資料同步至：
+	•	Hadoop HDFS + Hive（處理大量資料）
+	•	Google BigQuery（進行雲端資料分析）
+	3.	資料視覺化（Visualization）
+	•	使用 Power BI 或 Tableau 對評論進行關鍵字統計、星級分佈、評論數熱區等分析與圖表呈現
 
 
-# Tibame專案：士林夜市商家評論收集與分析
+預期成果
+	•	建立士林夜市各商家評論的資料集
+	•	完成自動化資料管線建置
+	•	以可視化方式洞察顧客評論趨勢
 
-    專案簡介
 
-本專案旨在透過 Python 的 Selenium 套件，自動化爬取 Google Maps 上士林夜市商家的評論資料，並將收集到的資訊整理成 CSV 檔案格式，作為後續資料分析與應用的基礎。
-
-專案目標
-	•	熟練使用 Python + Selenium 進行網頁自動化與資料擷取
-	•	建立資料清理與轉存流程（從網頁到 CSV）
-	•	可擴充為後端 API 或接資料視覺化工具（如 Power BI）
-
-收集項目
-	•	店家名稱、地址、座標（如可抓取）
-	•	每則評論的作者名稱、星等、內容、發表時間
-	•	各店家總評論數與平均評分（如可取得）
+未來延伸方向（選填）
+	•	建立 FastAPI 接口提供資料查詢服務
+	•	加入 NLP 模型分析評論情緒與主題
