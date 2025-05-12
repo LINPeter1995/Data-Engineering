@@ -1,6 +1,6 @@
 # Tibame-Project 
 
-Tibame 專案：士林夜市商家評論收集與分析（Data Pipeline 版）
+Tibame 專案：士林夜市商家評論收集與分析
 
 專案簡介
 
