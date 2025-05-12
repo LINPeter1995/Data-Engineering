@@ -8,12 +8,12 @@ Tibame 專案：士林夜市商家評論收集與分析
 
 技術架構與流程
 
-	1.	資料擷取層（Data Collection）
+ 1.	資料擷取層（Data Collection）
 
   使用 Python + Selenium 自動化爬取商家評論
 	 評論內容儲存為 CSV 檔
 
-	2.	資料儲存與轉換（ETL）
+ 2.	資料儲存與轉換（ETL）
 
  將 CSV 匯入：
 	MongoDB（做為暫存與結構化資料存取）
@@ -23,17 +23,16 @@ Tibame 專案：士林夜市商家評論收集與分析
 	Hadoop HDFS + Hive（處理大量資料）
 	Google BigQuery（進行雲端資料分析）
 
-	3.	資料視覺化（Visualization）
+ 3.	資料視覺化（Visualization）
 
  使用 Power BI 或 Tableau 對評論進行關鍵字統計、星級分佈、評論數熱區等分析與圖表呈現
 
-	預期成果
+ 預期成果
 
  建立士林夜市各商家評論的資料集
  完成自動化資料管線建置
  以可視化方式洞察顧客評論趨勢
 
-
-	未來延伸方向
+ 未來延伸方向
  建立 FastAPI 接口提供資料查詢服務
  加入 NLP 模型分析評論情緒與主題
