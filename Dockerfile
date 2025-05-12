@@ -1,5 +1,5 @@
 # 使用官方 Python 映像檔
-FROM python:3.12.10
+FROM python:3.11.0
 
 # 設定工作目錄
 WORKDIR /app

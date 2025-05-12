@@ -1,15 +1,15 @@
 [project]
-name = "tibame-tjr101-t1"
+name = "Tibame-Project"
 version = "0.1.0"
 description = ""
 authors = [
     {name = "Peter",email = "liyanglin08@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11,<3.12"
 dependencies = [
     "pandas (>=2.2.3,<3.0.0)",
-    "nump (>=5.5.5.5,<6.0.0.0.0)",
+    "numpy (>=1.21.0,<2.0.0)",  # 修正名稱
     "selenium (>=4.31.0,<5.0.0)",
     "webdriver-manager (>=4.0.2,<5.0.0)"
 ]
