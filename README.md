@@ -8,7 +8,7 @@ Tibame 專案：士林夜市商家評論收集與分析
 
 技術架構與流程
 
--1.	資料擷取層（Data Collection）
+    1.	資料擷取層（Data Collection）
 
   使用 Python + Selenium 自動化爬取商家評論
 	 評論內容儲存為 CSV 檔
