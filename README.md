@@ -14,7 +14,7 @@
 
 1. 資料擷取層（Data Collection）
 	•	使用 Python + Selenium 自動化爬取 Google Maps 商家評論。
-	•	每筆評論以 CSV 結構 即時送入 Apache Kafka Producer。
+	•	每筆評論以 JSON 結構 即時送入 Apache Kafka Producer。
 	•	Kafka 將資料發送至指定 Topic（如 shilin-reviews），實現評論資料串流處理。
 
 ⸻⸻⸻⸻⸻⸻⸻
